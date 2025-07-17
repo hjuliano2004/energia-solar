@@ -5,7 +5,6 @@ nav{
   background-color: #009060;
   border-top: 10px solid #005040;
   padding: 10px;
-
 }
 
 nav a{
@@ -66,4 +65,68 @@ p{
 
 
   padding: 20px;
+}
+
+#produtos{
+  text-align: center;
+}
+#produtos section{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#produtos div{
+  border: 1px solid black;
+  background-color: #00d38d;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+#produtos div figure{
+   text-align: center;
+   width: 100%;
+   margin: 0px;
+}
+
+#produtos div figure img{
+  width: 100%;
+}
+
+#orcamento{
+  text-align: center;
+  border: 1px solid black;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 3%;
+}
+
+#inputs{
+  display: grid;
+  grid-template-columns: 200px 200px;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+}  
+
+#inputs div{
+  text-align: right;
+}
+
+footer{
+  display: grid;
+  grid-template-columns: 100px 200px 200px 100px;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+
+footer div a{
+  color: white;
+  text-decoration: none;
+
+}
+
+footer div a:hover{
+  text-decoration: underline;
 }

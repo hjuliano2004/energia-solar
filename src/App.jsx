@@ -1,14 +1,11 @@
 import "./App.css";
+import { Footer } from "./componentes/footer";
+import { Nav } from "./componentes/Nav";
 
 function App() {
   return (
     <div>
-      <nav>
-        <a href="#sobre-nos">Sobre Nós</a>
-        <a href="#porque-investir">Por que investir</a>
-        <a href="#">Produtos</a>
-        <a href="#">Orçamento</a>
-      </nav>
+      <Nav />
 
       <section id="sobre-nos">
         <h2>Sobre Nós</h2>
@@ -30,12 +27,67 @@ function App() {
       <section id="porque-investir">
         <h2>por que investir em energia solar?</h2>
         <ul>
-          <li>retorno em forma de energia gratuita, em até 6 anos é como se </li>
+          <li>é como pagar 6 anos de energia pra ter energia infinita </li>
           <li>você pode vender a energia excessíva</li>
           <li>consumo ilimitado de energia(de acordo com o nivel de produção de energia)</li>
           <li>bleckouts não te afetarão</li>
         </ul>
       </section>
+
+      <section id="produtos">
+
+        <h2>produtos</h2>
+
+        <section>
+        <div>
+          <figure><img src="https://www.neosolar.com.br/media/catalog/product/cache/3baa78894a6170a4fe1da4f78d1c9db0/z/t/ztp-010mi.jpg"></img></figure>
+          <h3>placa solar YELLOW RAY P5-M4 h16 100W</h3>
+          <p>placa 100 watts média, uso doméstico</p>
+        </div>
+        
+        <div>
+          <figure><img src="https://http2.mlstatic.com/D_NQ_NP_914796-MLB44192298629_112020-O-kit-placa-solar-100w-controlador-30a-bateria-70ah.webp"></img></figure>
+          <h3>kit energia solar básico</h3>
+          <p>kit placa média 200w, controlador 30a, bateria 70ah</p>
+        </div>
+        <div>
+          <figure><img src="https://tse4.mm.bing.net/th/id/OIP.GtVDM-H1ApaQZ7xO9XqrnwHaJ4?w=720&h=960&rs=1&pid=ImgDetMain&o=7&rm=3"></img></figure>
+          <h3>torre de placas</h3>
+          <p>torre de placas, 16 slots de placas 200w</p>
+        </div>
+      </section>
+      </section>
+
+      <section id="orcamento">
+        <h1>Orçamento</h1>
+        <form>
+          
+          <div id="inputs">
+            <div>
+            <label htmlFor="nome">Nome:</label>
+            <input id="nome" type="text" required />
+          </div>
+
+          <div>
+            <label htmlFor="email">Email:</label>
+            <input id="email" type="email" required />
+          </div>
+
+          <div>
+            <label htmlFor="telefone">Telefone:</label>
+            <input id="telefone" type="number" required />
+          </div>
+
+          <div>
+            <label htmlFor="tipoSistema">Tipo de sistema</label>
+            <input id="tipoSistema" type="text" required />
+          </div>
+          </div>
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+
+      <Footer />
     </div>
   );
 }
